@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
+
+      html {
+        background: url("morbo.svg") no-repeat center
+          center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 1vw;
+        font-size: 2vw;
+        letter-spacing: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caption">
+      <span class="border">MORBO ATE THIS PICTURE</span>
+    </div>
+  </body>
+</html>

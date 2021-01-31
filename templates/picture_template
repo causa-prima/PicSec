@@ -1,0 +1,11 @@
+<!doctype html>
+    <title>{{ filename }}</title>
+    <div style="
+        width: {{ width}}px;
+        height: {{ height }}px;
+        background-image: {% for tile in tiles %}url(data:image/jpeg;base64,{{ tile.UTF8Base64String }}){% if not loop.last %},{% endif %}
+        {% endfor %};
+        background-position: {% for tile in tiles %}{{ tile.PosX }}px {{ tile.PosY }}px{% if not loop.last %},{% endif %}{% endfor %};
+        background-repeat: no-repeat">
+    </div>
+    
